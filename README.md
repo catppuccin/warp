@@ -36,7 +36,8 @@
 
 ## Usage
 
-1. Move the files in `./dist/` to you `~/.warp/themes`, or download them with `curl`:
+1. Move the files in `./dist/` to your `~/.warp/themes` directory, or download them with `curl`:
+
 ```bash
 mkdir -p ~/.warp/themes/
 curl --output-dir ~/.warp/themes -LO https://raw.githubusercontent.com/catppuccin/warp/main/dist/catppuccin_latte.yml
@@ -44,8 +45,9 @@ curl --output-dir ~/.warp/themes -LO https://raw.githubusercontent.com/catppucci
 curl --output-dir ~/.warp/themes -LO https://raw.githubusercontent.com/catppuccin/warp/main/dist/catppuccin_macchiato.yml
 curl --output-dir ~/.warp/themes -LO https://raw.githubusercontent.com/catppuccin/warp/main/dist/catppuccin_mocha.yml
 ```
-2. Open the "Theme Picker" either from your command palette or by pressing <kbd>⌃ ⌘ T</kbd>
-3. Select your preferred Catppuccin flavour
+
+2. Open the "Theme Picker" either from your command palette, or by pressing <kbd>⌃ ⌘ T</kbd>
+3. Select your preferred Catppuccin flavor
 
 ## 💝 Thanks to
 
