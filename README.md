@@ -46,8 +46,9 @@ curl --output-dir ~/.warp/themes -LO https://raw.githubusercontent.com/catppucci
 curl --output-dir ~/.warp/themes -LO https://raw.githubusercontent.com/catppuccin/warp/main/dist/catppuccin_mocha.yml
 ```
 
-2. Open the "Theme Picker" either from your command palette, or by pressing <kbd>⌃ ⌘ T</kbd>
-3. Select your preferred Catppuccin flavor
+2. Restart Warp to load the new themes
+3. Open the "Theme Picker" either from your command palette, or by pressing <kbd>⌃ ⌘ T</kbd>
+4. Select your preferred Catppuccin flavor
 
 ## 💝 Thanks to
 
