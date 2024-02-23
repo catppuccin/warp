@@ -36,6 +36,8 @@
 
 ## Usage
 
+# macOS
+
 1. Move the files in `./dist/` to your `~/.warp/themes` directory, or download them with `curl`:
 
 ```bash
@@ -48,6 +50,22 @@ curl --output-dir ~/.warp/themes -LO https://raw.githubusercontent.com/catppucci
 
 2. Restart Warp to load the new themes
 3. Open the "Theme Picker" either from your command palette, or by pressing <kbd>⌃ ⌘ T</kbd>
+4. Select your preferred Catppuccin flavor
+
+# Linux
+
+1. Move the files in `./dist/` to your `~/.local/share/warp-terminal/themes/` directory, or download them with `curl`:
+
+```bash
+mkdir -p ~/.local/share/warp-terminal/themes/
+curl --output-dir ~/.local/share/warp-terminal/themes/ -LO https://raw.githubusercontent.com/catppuccin/warp/main/dist/catppuccin_latte.yml
+curl --output-dir ~/.local/share/warp-terminal/themes/ -LO https://raw.githubusercontent.com/catppuccin/warp/main/dist/catppuccin_frappe.yml
+curl --output-dir ~/.local/share/warp-terminal/themes/ -LO https://raw.githubusercontent.com/catppuccin/warp/main/dist/catppuccin_macchiato.yml
+curl --output-dir ~/.local/share/warp-terminal/themes/ -LO https://raw.githubusercontent.com/catppuccin/warp/main/dist/catppuccin_mocha.yml
+```
+
+2. Restart Warp to load the new themes
+3. Open Settings --> Themes
 4. Select your preferred Catppuccin flavor
 
 ## 💝 Thanks to
