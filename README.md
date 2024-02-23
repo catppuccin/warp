@@ -34,9 +34,9 @@
 <img src="assets/mocha.webp"/>
 </details>
 
-## Usage
+# Usage
 
-# macOS
+## macOS
 
 1. Move the files in `./dist/` to your `~/.warp/themes` directory, or download them with `curl`:
 
@@ -52,7 +52,7 @@ curl --output-dir ~/.warp/themes -LO https://raw.githubusercontent.com/catppucci
 3. Open the "Theme Picker" either from your command palette, or by pressing <kbd>⌃ ⌘ T</kbd>
 4. Select your preferred Catppuccin flavor
 
-# Linux
+## Linux
 
 1. Move the files in `./dist/` to your `~/.local/share/warp-terminal/themes/` directory, or download them with `curl`:
 
