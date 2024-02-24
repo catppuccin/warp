@@ -57,7 +57,7 @@ curl --output-dir "$WARP_THEMES_DIR" -LO https://raw.githubusercontent.com/catpp
 ```
 
 2. Restart Warp to load the new themes
-3. Open Settings --> Themes
+3. Open Settings > Themes
 4. Select your preferred Catppuccin flavor
 
 ## 💝 Thanks to
