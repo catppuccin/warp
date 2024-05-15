@@ -1,0 +1,34 @@
+---
+accent: rosewater
+whiskers:
+  version: 2.1.0
+  matrix:
+    - flavor
+  filename: "themes/catppuccin_{{ flavor.identifier }}.yml"
+---
+
+{%- set palette = flavor.colors -%}
+
+background: '#{{ palette.base.hex }}'
+accent: '#{{ palette[accent].hex }}'
+foreground: '#{{ palette.text.hex }}'
+details: {% if flavor.dark %}darker{% else %}lighter{% endif %}
+terminal_colors:
+  normal:
+    black: '#{% if flavor.dark %}{{ palette.surface1.hex }}{% else %}{{ palette.subtext1.hex }}{% endif %}'
+    red: '#{{ palette.red.hex }}'
+    green: '#{{ palette.green.hex }}'
+    yellow: '#{{ palette.yellow.hex }}'
+    blue: '#{{ palette.blue.hex }}'
+    magenta: '#{{ palette.pink.hex }}'
+    cyan: '#{{ palette.teal.hex }}'
+    white: '#{% if flavor.dark %}{{ palette.subtext1.hex }}{% else %}{{ palette.surface2.hex }}{% endif %}'
+  bright:
+    black: '#{% if flavor.dark %}{{ palette.surface2.hex }}{% else %}{{ palette.subtext0.hex }}{% endif %}'
+    red: '#{{ palette.red.hex }}'
+    green: '#{{ palette.green.hex }}'
+    yellow: '#{{ palette.yellow.hex }}'
+    blue: '#{{ palette.blue.hex }}'
+    magenta: '#{{ palette.pink.hex }}'
+    cyan: '#{{ palette.teal.hex }}'
+    white: '#{% if flavor.dark %}{{ palette.subtext0.hex }}{% else %}{{ palette.surface1.hex }}{% endif %}'
