@@ -9,23 +9,23 @@ whiskers:
 background: '#{{ base.hex }}'
 accent: '#{{ flavor.colors[accent].hex }}'
 foreground: '#{{ text.hex }}'
-details: {% if flavor.dark %}darker{% else %}lighter{% endif %}
+details: {{ if(cond=flavor.dark, t="darker", f="lighter") }}
 terminal_colors:
   normal:
-    black: '#{% if flavor.dark %}{{ surface1.hex }}{% else %}{{ subtext1.hex }}{% endif %}'
+    black: '#{{ if(cond=flavor.dark, t=surface1.hex, f=subtext1.hex) }}'
     red: '#{{ red.hex }}'
     green: '#{{ green.hex }}'
     yellow: '#{{ yellow.hex }}'
     blue: '#{{ blue.hex }}'
     magenta: '#{{ pink.hex }}'
     cyan: '#{{ teal.hex }}'
-    white: '#{% if flavor.dark %}{{ subtext1.hex }}{% else %}{{ surface2.hex }}{% endif %}'
+    white: '#{{ if(cond=flavor.dark, t=subtext1.hex, f=surface2.hex) }}'
   bright:
-    black: '#{% if flavor.dark %}{{ surface2.hex }}{% else %}{{ subtext0.hex }}{% endif %}'
+    black: '#{{ if(cond=flavor.dark, t=surface2.hex, f=subtext0.hex) }}'
     red: '#{{ red.hex }}'
     green: '#{{ green.hex }}'
     yellow: '#{{ yellow.hex }}'
     blue: '#{{ blue.hex }}'
     magenta: '#{{ pink.hex }}'
     cyan: '#{{ teal.hex }}'
-    white: '#{% if flavor.dark %}{{ subtext0.hex }}{% else %}{{ surface1.hex }}{% endif %}'
+    white: '#{{ if(cond=flavor.dark, t=subtext0.hex, f=surface1.hex) }}'
