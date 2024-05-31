@@ -1,0 +1,31 @@
+---
+accent: rosewater
+whiskers:
+  version: "2.2.0"
+  matrix:
+    - flavor
+  filename: "themes/catppuccin_{{ flavor.identifier }}.yml"
+---
+background: '#{{ base.hex }}'
+accent: '#{{ flavor.colors[accent].hex }}'
+foreground: '#{{ text.hex }}'
+details: {{ if(cond=flavor.dark, t="darker", f="lighter") }}
+terminal_colors:
+  normal:
+    black: '#{{ if(cond=flavor.dark, t=surface1.hex, f=subtext1.hex) }}'
+    red: '#{{ red.hex }}'
+    green: '#{{ green.hex }}'
+    yellow: '#{{ yellow.hex }}'
+    blue: '#{{ blue.hex }}'
+    magenta: '#{{ pink.hex }}'
+    cyan: '#{{ teal.hex }}'
+    white: '#{{ if(cond=flavor.dark, t=subtext1.hex, f=surface2.hex) }}'
+  bright:
+    black: '#{{ if(cond=flavor.dark, t=surface2.hex, f=subtext0.hex) }}'
+    red: '#{{ red.hex }}'
+    green: '#{{ green.hex }}'
+    yellow: '#{{ yellow.hex }}'
+    blue: '#{{ blue.hex }}'
+    magenta: '#{{ pink.hex }}'
+    cyan: '#{{ teal.hex }}'
+    white: '#{{ if(cond=flavor.dark, t=subtext0.hex, f=surface1.hex) }}'
