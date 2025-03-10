@@ -43,6 +43,15 @@
 2. Restart Warp to load the new themes.
 3. Open **Settings** > **Themes** and select your flavor.
 
+
+## Install
+
+1. Arch (create directory if not present)
+   ```mkdir -p ${XDG_DATA_HOME:-$HOME/.local/share}/warp-terminal/themes/ && 
+    cd ${XDG_DATA_HOME:-$HOME/.local/share}/warp-terminal/themes/ && 
+    git clone https://github.com/catppuccin/warp.git
+   ```
+
 ## 💝 Thanks to
 
 - [winston](https://github.com/nekowinston)
