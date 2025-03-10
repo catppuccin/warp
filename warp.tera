@@ -1,7 +1,7 @@
 ---
 accent: rosewater
 whiskers:
-  version: "2.2.0"
+  version: 2.5.1
   matrix:
     - flavor
   filename: "themes/catppuccin_{{ flavor.identifier }}.yml"
