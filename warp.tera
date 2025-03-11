@@ -4,7 +4,7 @@ whiskers:
   version: "2.2.0"
   matrix:
     - flavor
-  filename: "themes/catppuccin_{{ flavor.identifier }}.yml"
+  filename: "themes/catppuccin-{{ flavor.identifier }}.yaml"
 ---
 background: '#{{ base.hex }}'
 accent: '#{{ flavor.colors[accent].hex }}'
@@ -29,3 +29,4 @@ terminal_colors:
     magenta: '#{{ pink.hex }}'
     cyan: '#{{ teal.hex }}'
     white: '#{{ if(cond=flavor.dark, t=subtext0.hex, f=surface1.hex) }}'
+name: Catppuccin {{ flavor.name }}
